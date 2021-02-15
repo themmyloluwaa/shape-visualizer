@@ -1,5 +1,5 @@
 {
-  "name": "shape-drawer",
+  "name": "shape-visualizer",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

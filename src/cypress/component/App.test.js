@@ -161,6 +161,6 @@ describe("it should render", () => {
 
     cy.get("#delete-all").first().click();
 
-    cy.get("svg").should("have.length", 0).should("not.be.visible");
+    cy.get("svg").should("have.length", 0);
   });
 });
