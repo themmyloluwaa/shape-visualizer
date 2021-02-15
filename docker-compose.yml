@@ -1,0 +1,15 @@
+version: "3.7"
+
+services:
+  shape-visualizer:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    environment:
+      - PORT=6000
+      - CHOKIDAR_USEPOLLING=true
+    ports:
+      - 6000:6000
+    volumes:
+      - .:/app
+      - "/app/node_modules"
