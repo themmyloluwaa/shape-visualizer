@@ -14,7 +14,7 @@
     "web-vitals": "^1.1.0"
   },
   "scripts": {
-    "start": "react-scripts start -p ${PORT:-3000}",
+    "start": "react-scripts start -p $PORT",
     "build": "react-scripts build",
     "test": "npm run cypress:run",
     "eject": "react-scripts eject",

@@ -5,11 +5,11 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.dev
-    environment:
-      - PORT=6000
-      - CHOKIDAR_USEPOLLING=true
-    ports:
-      - 6000:6000
     volumes:
       - .:/app
       - "/app/node_modules"
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+      - CHOKIDAR_USEPOLLING=true
