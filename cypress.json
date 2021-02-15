@@ -1,5 +1,4 @@
 {
-  "baseUrl": "http://localhost:5000/",
   "experimentalComponentTesting": true,
   "componentFolder": "src/cypress/component",
   "integrationFolder": "src/cypress/integration",
