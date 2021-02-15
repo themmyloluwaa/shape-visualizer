@@ -19,9 +19,9 @@ describe("test for the Square component", () => {
       .as("rectangleLength")
       .should("be.visible");
 
-    cy.get("input[name=rectangle-width]").should("to.be.undefined");
+    cy.get("input[name=rectangle-width]").should("have.length", 0);
 
-    cy.get("input[name=rectangle-height]").should("to.be.undefined");
+    cy.get("input[name=rectangle-height]").should("have.length", 0);
 
     cy.get("@rectangleLength").type(100).should("have.value", 100);
 
