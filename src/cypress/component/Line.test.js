@@ -2,7 +2,7 @@
 /* eslint-disable jest/valid-expect-in-promise */
 /* eslint-disable no-undef */
 import React from "react";
-import { mount } from "cypress-react-unit-test";
+import { mount } from "@cypress/react";
 import Line from "../../components/ShapeInput/Line";
 /// <reference types="Cypress" />
 

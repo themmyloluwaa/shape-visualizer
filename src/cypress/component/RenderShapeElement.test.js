@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 
 import React from "react";
-import { mount } from "cypress-react-unit-test";
+import { mount } from "@cypress/react";
 import RenderShapeElement from "../../components/ShapeDrawer/RenderShapeElement";
 
 describe("tests to check if the correct shape renders", () => {

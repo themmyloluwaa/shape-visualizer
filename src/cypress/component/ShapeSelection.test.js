@@ -2,7 +2,7 @@
 /* eslint-disable jest/valid-expect-in-promise */
 /* eslint-disable no-undef */
 import React from "react";
-import { mount } from "cypress-react-unit-test";
+import { mount } from "@cypress/react";
 import ShapeSelection from "../../components/ShapeInput/ShapeSelection";
 
 let data;
@@ -23,7 +23,7 @@ describe("tests for the ShapeSelection component", () => {
         expect(data).to.be.deep.equal({ shape: "square", length: 40 });
       });
 
-    cy.get("input[name=rectangle-length]").should("not.be.visible");
+    cy.get("input[name=rectangle-length]").should("have.length", 0);
   });
 
   it("should render the shape selection component with rectangle shape", () => {
@@ -43,8 +43,8 @@ describe("tests for the ShapeSelection component", () => {
         });
       });
 
-    cy.get("input[name=rectangle-width]").should("not.be.visible");
-    cy.get("input[name=rectangle-height]").should("not.be.visible");
+    cy.get("input[name=rectangle-width]").should("have.length", 0);
+    cy.get("input[name=rectangle-height]").should("have.length", 0);
   });
 
   it("should render the shape selection component with circle shape", () => {
@@ -59,7 +59,7 @@ describe("tests for the ShapeSelection component", () => {
         expect(data).to.be.deep.equal({ shape: "circle", radi: 50 });
       });
 
-    cy.get("input[name=circle]").should("not.be.visible");
+    cy.get("input[name=circle]").should("have.length", 0);
   });
 
   it("should render the shape selection component with ellipse shape", () => {
@@ -75,8 +75,8 @@ describe("tests for the ShapeSelection component", () => {
         expect(data).to.be.deep.equal({ shape: "ellipse", ry: 70, rx: 20 });
       });
 
-    cy.get("input[name=EllipseY]").should("not.be.visible");
-    cy.get("input[name=EllipseX]").should("not.be.visible");
+    cy.get("input[name=EllipseY]").should("have.length", 0);
+    cy.get("input[name=EllipseX]").should("have.length", 0);
   });
 
   it("should render the shape selection component with line shape", () => {
@@ -100,9 +100,9 @@ describe("tests for the ShapeSelection component", () => {
         });
       });
 
-    cy.get("input[name=Line-x1]").should("not.be.visible");
-    cy.get("input[name=Line-x2]").should("not.be.visible");
-    cy.get("input[name=Line-y1]").should("not.be.visible");
-    cy.get("input[name=Line-y2]").should("not.be.visible");
+    cy.get("input[name=Line-x1]").should("have.length", 0);
+    cy.get("input[name=Line-x2]").should("have.length", 0);
+    cy.get("input[name=Line-y1]").should("have.length", 0);
+    cy.get("input[name=Line-y2]").should("have.length", 0);
   });
 });

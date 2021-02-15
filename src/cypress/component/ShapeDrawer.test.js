@@ -2,7 +2,7 @@
 /* eslint-disable jest/valid-expect-in-promise */
 /* eslint-disable no-undef */
 import React from "react";
-import { mount } from "cypress-react-unit-test";
+import { mount } from "@cypress/react";
 import ShapeDrawer from "../../components/ShapeDrawer/ShapeDrawer";
 const nativeInputValueSetter = Object.getOwnPropertyDescriptor(
   window.HTMLInputElement.prototype,
