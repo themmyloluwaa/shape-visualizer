@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# Shape Drawer Web Application.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### Built by Temiloluwa Philip Ojo
 
-## Available Scripts
+This is a simple web application that allows you select a shape type and it draws the shapes based on the length / radi you input. You can customize the shape by :
 
-In the project directory, you can run:
+- Selecting the fill color
+- Selecting the stroke color
+- Selecting the stroke width
+- Delete all shapes or delete a single shape
 
-### `npm start`
+##### Shapes can be saved to ensure you have your old shapes upon app reload.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+##### To start the project using docker-compose, run docker-compose up --build then subsequently, run docker-compose up.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Testing
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    The shape drawer application tests were written using cypress.io. Cypress is an amazing test automation framework that makes testing javascript application easy and convenient.
 
-### `npm run build`
+    The method of testing employed is component and unit testing considering that create react app works with components rather than pages like Nextjs or Gatsby.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    Component testing is an experimental feature on cypress and it's still in the alpha base but it was the best choice over end to end testing to assert the full functionality of the components.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    To run tests, run
+    **npm run cypress:open** or **npm run test**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    This will execute the cypress test runner. Click on the file *All-RUN ME.test.js* this file contains all the test written for the components. Considering that cypress component testing is still at the experimental phase, it was difficult to run all component test at once but this is a workaround.
 
-### `npm run eject`
+    You can also run each component test individually.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+    After running the test, check the coverage report in coverage/lcov-report/index.html which shows branch coverage of >95%.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    A branch for tests also exist called app/test which was created specifically for writing tests.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+_Thank you_
+_Yours truly,_
+**_The Pounded Yam Lover 😋😋😋_**
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+###### Connect with me through the following
 
-## Learn More
+> Twitter - [CodeKagei](https://twitter.com/themmyloluwaaa)
+> Linkedin - [Temiloluwa Philip Ojo](https://www.linkedin.com/in/temiloluwa-ojo/)
+> Github [CodeKagei](https://github.com/themmyloluwaa)
+> Email [codekagei@gmail.com](codekagei@gmail.com)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[Live Demo https://shape-drawer.vercel.app/](https://shape-drawer.vercel.app/)
