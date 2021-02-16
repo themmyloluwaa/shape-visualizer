@@ -13,8 +13,4 @@ jobs:
       - name: Run docker-compose stack
         uses: actions/checkout@v2
       - run: |
-          echo "I am about starting out"
-          echo "Successfully checked out of workflow directory"
-          pwd
-          sudo npm i -g @cypress/react
-          docker-compose -f testing.yml up --exit-code-from tests
+          npm run test
