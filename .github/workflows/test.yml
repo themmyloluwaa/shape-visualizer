@@ -13,4 +13,5 @@ jobs:
       - name: Run docker-compose stack
         uses: actions/checkout@v2
       - run: |
-          npm run test
+          npm install 
+          npm run ci
