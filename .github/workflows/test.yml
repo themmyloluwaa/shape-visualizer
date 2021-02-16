@@ -16,5 +16,5 @@ jobs:
           echo "I am about starting out"
           echo "Successfully checked out of workflow directory"
           pwd
-          npm i -g @cypress/react
+          sudo npm i -g @cypress/react
           docker-compose -f testing.yml up --exit-code-from tests
