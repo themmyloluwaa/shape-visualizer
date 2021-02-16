@@ -12,9 +12,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Run docker-compose stack
-      - run: |
-          echo "I am about starting out"
-          cd ../..
-          echo "Successfully checked out of workflow directory"
-          pwd
-          docker-compose -f testing.yml up
+      - run: docker-compose -f testing.yml up
