@@ -4,6 +4,5 @@ build
 Dockerfile
 Dockerfile.prod
 # testing
-/coverage
 .nyc_output
 **/videos
