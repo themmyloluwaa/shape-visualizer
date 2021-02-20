@@ -23,4 +23,4 @@ services:
       - CYPRESS_baseUrl=http://shape-visualizer:8000
     working_dir: /tests
     volumes:
-      - $PWD:/e2e
+      - $PWD:/tests
