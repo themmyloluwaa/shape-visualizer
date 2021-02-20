@@ -1,0 +1,12 @@
+FROM cypress/included:6.4.0
+
+WORKDIR /test
+
+COPY ./package.json ./
+
+RUN npm i @cypress/react
+
+RUN npm i cypress
+
+RUN npm i  start-server-and-test
+
