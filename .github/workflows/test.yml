@@ -13,6 +13,5 @@ jobs:
       - name: Run docker-compose stack
         uses: actions/checkout@v2
       - run: |
-          npm install 
-          echo "Installing"
-          npm run ci
+          
+          docker-compose -f testing.yml up --build --exit-code-from tests

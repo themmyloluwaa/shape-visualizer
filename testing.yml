@@ -14,11 +14,13 @@ services:
       - PORT=8000
       - CHOKIDAR_USEPOLLING=true
   tests:
-    image: "cypress/included:6.4.0"
+    build:
+      context: .
+      dockerfile: Dockerfile.test
     depends_on:
       - shape-visualizer
     environment:
       - CYPRESS_baseUrl=http://shape-visualizer:8000
     working_dir: /tests
     volumes:
-      - ./:/tests
+      - $PWD:/tests
